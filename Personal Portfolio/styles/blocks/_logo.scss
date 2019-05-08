@@ -1,0 +1,13 @@
+.b-logo {
+    font-family: $Montserrat;
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 0.9px;
+    color: $colorWhite;
+    text-decoration: none;
+    display: block;
+    
+    &__desc {
+        color: $AzureRadiance;
+    }
+}
