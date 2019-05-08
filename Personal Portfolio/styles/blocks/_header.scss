@@ -1,0 +1,13 @@
+.b-header {
+    background-image: url(../../images/backgrounds/ofice.png);
+    background-size: cover;
+    background-position: center center;
+    height: 942px;
+    
+    &__inside {
+        width: 1280px;
+        margin: 0 auto;
+        background-color: beige;
+        height: inherit;
+    }
+}
