@@ -1,0 +1,54 @@
+.b-client {
+    background: url(../../images/backgrounds/mountains.png);
+    background-size: cover;
+    background-position: center center;
+    //height: 753px;
+
+    &__inside {
+        width: 1280px;
+        margin: 0 auto;
+        @extend %StadartPading;
+    }
+
+    &__title {
+        @extend %LeckerliOneSubtitle;
+        
+        &_decoration {
+            text-align: center;
+            margin-bottom: 21px;
+        }
+    }
+
+    &__caption {
+        font-family: $Montserrat;
+        font-size: 35px;
+        font-weight: 900;
+        letter-spacing: 0.9px;
+        color: $colorWhite;
+        
+        &_decoration {
+            text-align: center;
+            margin-bottom: 29px;
+        }
+    }
+
+    &__text {
+        font-family: $Lato;
+        font-size: 17px;
+        line-height: 1.76;
+        letter-spacing: 0.4px;
+        color: $colorWhite;
+        
+        &_decoration {
+            text-align: center;
+            margin-bottom: 118px;
+        }
+    }
+    
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+}

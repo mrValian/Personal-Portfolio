@@ -1,0 +1,75 @@
+.b-WhatIDo {
+    background-color: $AzureRadiance;
+
+    &__inside {
+        width: 1280px;
+        margin: 0 auto;
+        @extend %StadartPading;
+    }
+
+    &__title {
+        @extend %LeckerliOneSubtitle;
+
+        &_decoration {
+            margin-bottom: 21px;
+            text-align: center;
+        }
+    }
+
+    &__caption {
+        font-family: $Montserrat;
+        font-size: 35px;
+        font-weight: 900;
+        letter-spacing: 0.9px;
+        color: $colorWhite;
+
+        &_decoration {
+            margin-bottom: 77px;
+            text-align: center;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 89px;
+    }
+    
+    &__infoWrap {
+        padding-left: 95px;
+        
+        &:nth-child(1){
+            background: url(../../images/icons/VectorSmartObject1.png) no-repeat left top;
+        }
+        
+        &:nth-child(2){
+            background: url(../../images/icons/VectorSmartObject2.png) no-repeat left top;
+        }
+        
+        &:nth-child(3){
+            background: url(../../images/icons/VectorSmartObject3.png) no-repeat left top;
+        }
+    }
+
+    &__subject {
+        font-family: $Lato;
+        line-height: 1.5;
+        color: $colorWhite;
+        font-size: 17px;
+        font-weight: 900;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        
+        &_decoration {
+            margin-bottom: 23px;
+        }
+    }
+
+    &__desc {
+        font-family: $Lato;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.4px;
+        color: $colorWhite;
+    }
+}
