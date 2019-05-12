@@ -13,9 +13,19 @@ $Cerulean: #00aeed;
 $EastBay: #3b4374;
 $Scorpion: #575757;
 $Black: #000000;
+$MineShaft: #3b3b3b;
+$MineBlack: #353535;
+$AzureRadiance: #007ef9;
+$Silver: #b9b8b8;
+$Amaranth: #E91D62;
 
 %StadartPading {
     padding: 50px;
+    box-sizing: border-box;
+}
+
+%BlogPading {
+    padding: 40px;
     box-sizing: border-box;
 }
 
