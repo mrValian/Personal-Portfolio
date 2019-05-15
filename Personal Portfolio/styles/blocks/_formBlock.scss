@@ -1,0 +1,64 @@
+.b-formBlock {
+
+    &__heading {
+        font-family: $Montserrat;
+        font-size: 35px;
+        font-weight: 900;
+        letter-spacing: 0.9px;
+        color: $colorWhite;
+
+        &_decoration {
+            margin-bottom: 91px;
+        }
+    }
+
+    &__forms {
+        display: table;
+    }
+
+    &__row {
+        display: table-row;
+    }
+
+    &__cell {
+        display: table-cell;
+        font-family: $Lato;
+        font-size: 17px;
+        letter-spacing: 0.4px;
+        color: $colorWhite;
+        padding-bottom: 17px;
+
+        &:first-child {
+            padding-right: 28px;
+            vertical-align: top;
+        }
+    }
+
+    &__input {
+        width: 359px;
+        height: 34px;
+        border-radius: 15px;
+        background-color: $MineShaftBlack;
+        border: none;
+        outline: none;
+        padding: 0 10px;
+        box-sizing: border-box;
+        color: $colorWhite;
+    }
+
+    &__textarea {
+        width: 359px;
+        height: 78px;
+        border-radius: 15px;
+        background-color: $MineShaftBlack;
+        border: none;
+        outline: none;
+        padding: 10px 10px;
+        box-sizing: border-box;
+        color: $colorWhite;
+    }
+    
+    &__btn {
+        @include btn($AzureRadiance);
+    }
+}
