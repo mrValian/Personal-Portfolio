@@ -1,0 +1,25 @@
+.b-copyrightBlock {
+
+    &__site {
+        font-family: $Lato;
+        font-size: 17px;
+        letter-spacing: 0.4px;
+        color: $colorWhite;
+        
+        &_decoration {
+            text-align: center;
+            margin-bottom: 29px;
+        }
+    }
+
+    &__copyright {
+        font-family: $Lato;
+        font-size: 17px;
+        letter-spacing: 0.4px;
+        color: $colorWhite;
+        
+        &_decoration {
+            text-align: center;
+        }
+    }
+}

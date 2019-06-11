@@ -1,0 +1,26 @@
+.b-socialBlock {
+    padding: 100px 0;
+
+    &__wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    &__list {
+        width: 57px;
+        height: 56px;
+        border: solid 3px $colorWhite;
+        background-color: $Black;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 16px;
+    }
+
+    &__link {
+        font-size: 25px;
+        color: $colorWhite;
+    }
+}

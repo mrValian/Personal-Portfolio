@@ -1,0 +1,48 @@
+.b-helloWrap {
+
+    &__title {
+        @extend %LeckerliOneSubtitle;
+        margin-bottom: 32px;
+    }
+
+    &__caption {
+        font-family: $Montserrat;
+        color: $colorWhite;
+        font-size: 41.5px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-bottom: 62px;
+
+        &Name {
+            font-size: 41.5px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: $AzureRadiance;
+        }
+
+        &Ceo {
+            font-size: 30px;
+            letter-spacing: 0.8px;
+            line-height: 1.6;
+        }
+    }
+
+    &__text {
+        width: 560px;
+        font-family: $Lato;
+        font-size: 17px;
+        line-height: 1.76;
+        letter-spacing: 0.4px;
+        color: $colorWhite;
+        margin-bottom: 84px;
+    }
+
+    &__link {
+        @include btn($Cerulean);
+    }
+
+    &_decoration {
+        position: absolute;
+        top: 284px;
+    }
+}

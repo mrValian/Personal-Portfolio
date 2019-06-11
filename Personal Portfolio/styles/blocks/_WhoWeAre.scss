@@ -1,0 +1,59 @@
+.b-WhoWeAre {
+    background-color: $AzureRadiance;
+
+    &__inside {
+        width: 1280px;
+        margin: 0 auto;
+        @extend %StadartPading;
+    }
+
+    &__title {
+        @extend %LeckerliOneSubtitle;
+
+        &_decoration {
+            margin-bottom: 41px;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 130px;
+    }
+
+    &__textOne {
+        font-family: $Lato;
+        font-size: 17px;
+        line-height: 1.76;
+        letter-spacing: 0.4px;
+        color: $colorWhite;
+    }
+
+    &__headline {
+        font-family: $Montserrat;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 0.8px;
+        color: $colorWhite;
+
+        &_decoration {
+            margin-bottom: 23px;
+        }
+    }
+
+    &__textTwo {
+        font-family: $Lato;
+        font-size: 17px;
+        line-height: 1.76;
+        letter-spacing: 0.4px;
+        color: $colorWhite;
+    }
+
+    &__link {
+        @include btn($EastBay);
+        
+        &_decoration {
+            margin-top: 45px;
+        }
+    }
+}

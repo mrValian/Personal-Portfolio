@@ -1,0 +1,75 @@
+.b-addressInfoBlock {
+
+    &__heading {
+        font-family: $Montserrat;
+        font-size: 35px;
+        font-weight: 900;
+        letter-spacing: 0.9px;
+        color: $colorWhite;
+
+        &_decoration {
+            margin-bottom: 91px;
+        }
+    }
+
+    &__allWrap {}
+
+    &__wrap {
+        padding-left: 105px;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        &:nth-child(1) {
+            background: url(../images/icons/Icon2.png) no-repeat left top;
+        }
+
+        &:nth-child(2) {
+            background: url(../images/icons/Icon3.png) no-repeat left top;
+        }
+
+        &:nth-child(3) {
+            background: url(../images/icons/Icon1.png) no-repeat left top;
+        }
+    }
+
+    &__subtitle {
+        font-family: $Lato;
+        font-size: 17px;
+        font-weight: bold;
+        letter-spacing: 0.4px;
+        color: $colorWhite;
+
+        &_decoration {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__link {
+        font-family: $Lato;
+        font-size: 16px;
+        letter-spacing: 0.4px;
+        color: $colorWhite;
+        text-decoration: none;
+    }
+
+    &__tel {
+        font-family: $Lato;
+        font-size: 16px;
+        letter-spacing: 0.4px;
+        color: $colorWhite;
+
+        &_decoration {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__street {
+        font-family: $Lato;
+        font-size: 16px;
+        letter-spacing: 0.4px;
+        color: $colorWhite;
+        line-height: 1.5;
+    }
+}
