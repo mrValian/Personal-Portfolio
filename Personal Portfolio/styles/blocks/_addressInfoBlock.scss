@@ -10,6 +10,10 @@
         &_decoration {
             margin-bottom: 91px;
         }
+
+        @include customRespond($smFrom, $mdTo) {
+            width: 460px;
+        }
     }
 
     &__allWrap {}

@@ -2,15 +2,16 @@
     background-color: $colorWhite;
 
     &__inside {
-        width: 1280px;
-        margin: 0 auto;
+        // width: 1280px;
+        // margin: 0 auto;
+        @include insideWrapMixin;
         padding: 50px 0 0;
     }
 
     &__title {
         @extend %LeckerliOneSubtitle;
         color: $Scorpion;
-        
+
         &_decoration {
             text-align: center;
             margin-bottom: 5px;
@@ -23,46 +24,54 @@
         font-weight: 900;
         letter-spacing: 0.9px;
         color: $Black;
-        
+
         &_decoration {
             text-align: center;
             margin-bottom: 66px;
         }
     }
-    
+
     &__grid {
         background-color: $Black;
         display: grid;
-        grid-template-areas: 
+        grid-template-areas:
             "businesscard businesscard brochure profile"
-            "solution envelops brochure ad"
+            "solution envelops brochure ad";
+
+        @include customRespond($xxsFrom, $smTo) {
+            grid-template-areas:
+                "businesscard businesscard"
+                "solution envelops"
+                "brochure profile"
+                "brochure ad";
+        }
     }
-    
+
     &__businesscard {
         grid-area: businesscard;
         width: 100%;
     }
-    
+
     &__brochure {
         grid-area: brochure;
         width: 100%;
     }
-    
+
     &__profile {
         grid-area: profile;
         width: 100%;
     }
-    
+
     &__solution {
         grid-area: solution;
         width: 100%;
     }
-    
+
     &__envelops {
         grid-area: envelops;
         width: 100%;
     }
-    
+
     &__ad {
         grid-area: ad;
         width: 100%;

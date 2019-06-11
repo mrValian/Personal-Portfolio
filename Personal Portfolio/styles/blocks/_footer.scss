@@ -4,21 +4,28 @@
     background-size: cover;
 
     &__inside {
-        width: 1280px;
-        margin: 0 auto;
+        // width: 1280px;
+        // margin: 0 auto;
+        @include insideWrapMixin;
         padding: 50px 0;
     }
-    
+
     &__title {
         @extend %LeckerliOneSubtitle;
-        
+
         &_decoration {
             margin-bottom: 35px;
         }
     }
-    
+
     &__wrap {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+
+        @include customRespond($xxsFrom, $mdTo) {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            grid-row-gap: 50px;
+        }
     }
 }

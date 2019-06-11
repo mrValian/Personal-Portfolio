@@ -1,19 +1,30 @@
 .b-blog {
 
     &__inside {
-        width: 1280px;
-        margin: 0 auto;
+        // width: 1280px;
+        // margin: 0 auto;
+        @include insideWrapMixin;
         padding: 50px 0;
     }
 
     &__grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        // grid-template-columns: repeat(4, 1fr);
         grid-gap: 30px;
-        grid-template-areas: 
+        grid-template-areas:
             "iWrite iWrite house house"
             "blueBlock blueBlock house house"
-            "greyBlock blackBlock pinkBlock pinkBlock"
+            "greyBlock blackBlock pinkBlock pinkBlock";
+
+        @include customRespond($xxsFrom, $mdTo) {
+            grid-template-areas:
+                "iWrite iWrite"
+                "blueBlock blueBlock"
+                "greyBlock blackBlock"
+                "house house"
+                "house house"
+                "pinkBlock pinkBlock";
+        }
     }
 
     // 1 block
@@ -68,12 +79,12 @@
         line-height: 1.5;
         letter-spacing: 0.5px;
         color: $colorWhite;
-        
+
         &_decoration {
             text-align: center;
         }
     }
-    
+
     &__infoHouse {}
 
     &__heading {
@@ -82,7 +93,7 @@
         font-size: 30px;
         font-weight: 900;
         letter-spacing: 0.8px;
-        
+
         &_decoration {
             margin-bottom: 15px;
             text-align: center;
@@ -96,11 +107,11 @@
         line-height: 1.5;
         letter-spacing: 0.5px;
         color: $colorWhite;
-        
+
         &_decoration {
             text-align: center;
         }
-        
+
         &_docorationPink {
             text-align: justify;
             margin-top: 30px;
@@ -115,7 +126,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
+
     }
 
     // 4 block
@@ -143,7 +154,7 @@
         font-weight: 900;
         letter-spacing: 0.8px;
         color: $MineBlack;
-        
+
         &_decoration {
             text-align: center;
         }

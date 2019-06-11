@@ -3,11 +3,12 @@
     background-size: cover;
     background-position: center center;
     height: 942px;
-    
+
     &__inside {
-        width: 1280px;
-        margin: 0 auto;
-        padding: 0 50px;
+        // width: 1280px;
+        @include insideWrapMixin;
+        // margin: 0 auto;
+        padding: 0 $standartPadding;
         box-sizing: border-box;
         position: relative;
     }

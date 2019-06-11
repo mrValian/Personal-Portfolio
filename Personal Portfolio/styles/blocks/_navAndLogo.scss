@@ -4,4 +4,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    @include customRespond($xxsFrom, $xsTo) {
+        flex-direction: column;
+    }
 }

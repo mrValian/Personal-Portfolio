@@ -35,6 +35,10 @@
         letter-spacing: 0.4px;
         color: $colorWhite;
         margin-bottom: 84px;
+
+        @include customRespond($xxsFrom, $xsTo) {
+            width: auto;
+        }
     }
 
     &__link {

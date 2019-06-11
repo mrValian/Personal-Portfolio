@@ -2,17 +2,18 @@
     background: url(../images/backgrounds/mountains.png);
     background-size: cover;
     background-position: center center;
-    //height: 753px;
+    // height: 753px;
 
     &__inside {
-        width: 1280px;
-        margin: 0 auto;
+        // width: 1280px;
+        // margin: 0 auto;
+        @include insideWrapMixin;
         @extend %StadartPading;
     }
 
     &__title {
         @extend %LeckerliOneSubtitle;
-        
+
         &_decoration {
             text-align: center;
             margin-bottom: 21px;
@@ -25,7 +26,7 @@
         font-weight: 900;
         letter-spacing: 0.9px;
         color: $colorWhite;
-        
+
         &_decoration {
             text-align: center;
             margin-bottom: 29px;
@@ -38,17 +39,27 @@
         line-height: 1.76;
         letter-spacing: 0.4px;
         color: $colorWhite;
-        
+
         &_decoration {
             text-align: center;
             margin-bottom: 118px;
         }
     }
-    
+
     &__grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         align-items: center;
         justify-items: center;
+
+        @include customRespond($mdFrom, $mdTo) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 20px;
+        }
+
+        @include customRespond($xxsFrom, $smTo) {
+            grid-template-columns: 1fr;
+            grid-row-gap: 20px;
+        }
     }
 }

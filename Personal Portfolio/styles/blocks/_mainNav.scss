@@ -1,5 +1,5 @@
 .b-mainNav {
-    
+
     &__link {
         display: inline-block;
         padding: 0 10px;
@@ -10,9 +10,13 @@
         font-weight: bold;
         letter-spacing: 0.4px;
         color: $colorWhite;
-        
+
         &:hover {
             color: $AzureRadiance;
+        }
+
+        @include customRespond($xxsFrom, $xsTo) {
+            padding: 5px;
         }
     }
 }

@@ -1,5 +1,10 @@
 .b-imgHeader {
     position: absolute;
     top: 170px;
-    right: 25px;
+    right: 0px;
+    display: block;
+
+    @include customRespond($xxsFrom, $mdTo) {
+        display: none;
+    }
 }

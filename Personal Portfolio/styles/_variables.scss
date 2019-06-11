@@ -21,7 +21,7 @@ $Silver: #b9b8b8;
 $Amaranth: #E91D62;
 
 %StadartPading {
-    padding: 50px;
+    padding: 20px;
     box-sizing: border-box;
 }
 
@@ -67,4 +67,71 @@ $Amaranth: #E91D62;
     text-align: center;
     color: $colorWhite;
     text-decoration: none;
+}
+
+@mixin respondTo($_media) {
+    @if $_media==phones {
+        @media all and (max-width: 479px) {
+            @content;
+        }
+    }
+
+    @else if $_media==wide-phones {
+        @media all and (min-width: 480px) and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if $_media==tablets {
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            @content;
+        }
+    }
+
+    @else if $_media==small-desktops {
+        @media all and (min-width: 992px) and (max-width: 1199px) {
+            @content;
+        }
+    }
+
+    @else if $_media==lg-desktops {
+        @media all and (min-width: 1200px) and (max-width: 1440px) {
+            @content;
+        }
+    }
+
+    @else if $_media==xlg-desktops {
+        @media all and (min-width: 1441px) and (max-width: 1920px) {
+            @content;
+        }
+    }
+}
+
+$xxsFrom: 0;
+$xxsTo: 479px;
+$xsFrom: 480px;
+$xsTo: 767px;
+$smFrom: 768px;
+$smTo: 991px;
+$mdFrom: 992px;
+$mdTo: 1199px;
+$lgFrom: 1200px;
+
+@mixin customRespond($_minWidth, $_maxWidth) {
+    @media all and (min-width: $_minWidth) and (max-width: $_maxWidth) {
+        @content;
+    }
+}
+
+$standartPadding: 20px;
+$standartGap: 20px;
+
+@mixin insideWrapMixin {
+    width: 1200px;
+    margin: 0 auto;
+
+    @include customRespond(0, (1200px + $standartPadding*2) - 1) {
+        width: 100%;
+        margin: 0 0;
+    }
 }
